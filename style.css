@@ -1,0 +1,56 @@
+body{
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #FEF2BF;
+    font-size: 1.5rem;
+    background-color:blue;  
+}
+.container-out{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* z-index: -2; */
+    height: 80vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.buttons{
+    display: flex;
+}
+.btn{
+    width: 100px;
+    border: 5px solid black;
+    height: 100px;
+    background-color: pink
+}
+.bg-cross{
+    background-color: aqua;
+    z-index: 3;
+}
+.bg-zero{
+    background-color:orange;
+    z-index: 2;
+}
+.cross{
+    background-image: url("./images/cross.png");
+    background-size: 100px;
+    aspect-ratio: 3/2;
+    /* opacity: 0.8; */
+    z-index: 1;
+}
+.zero{
+    background-image: url("./images/zero.png");
+    /* backdrop-filter: blur(20px); */
+    
+    background-size:100px;
+    aspect-ratio: 3/2;
+    /* background-repeat: no-repeat; */
+    /* z-index: 1; */
+    /* width: fit-content; */
+}
+.game-over {
+    background-color: forestgreen;
+    opacity: 0.8;
+}
