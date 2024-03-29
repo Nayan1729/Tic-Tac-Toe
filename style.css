@@ -21,34 +21,47 @@ body{
 }
 .btn{
     width: 100px;
-    border: 5px solid black;
+    border: 4px solid black;
     height: 100px;
     background-color: pink
 }
 .bg-cross{
     background-color: aqua;
-    z-index: 3;
-}
-.bg-zero{
-    background-color:orange;
+    background-image: url("./images/cross.png");
+    background-size: cover;
+    background-position: center;
     z-index: 2;
+    background-blend-mode:multiply; /* Adjust blend mode as needed */
+}
+.bg-zero {
+    /* background: linear-gradient(180deg, orange 60%, green); */
+    background-color: orangered;
+    background-image: url("./images/zero.png");
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    background-blend-mode:multiply; /* Adjust blend mode as needed */
 }
 .cross{
-    background-image: url("./images/cross.png");
-    background-size: 100px;
-    aspect-ratio: 3/2;
+  
+    width: 100px;
+    height: 100px;
     /* opacity: 0.8; */
-    z-index: 1;
-}
-.zero{
-    background-image: url("./images/zero.png");
-    /* backdrop-filter: blur(20px); */
-    
-    background-size:100px;
-    aspect-ratio: 3/2;
-    /* background-repeat: no-repeat; */
     /* z-index: 1; */
-    /* width: fit-content; */
+}
+.zero {
+    /* Remove the background-image property */
+    /* background-image: url("./images/zero.png"); */
+    
+    /* Remove aspect-ratio property */
+    /* aspect-ratio: 3/2; */
+    
+    /* Add z-index to ensure the background color is below the image */
+    /* z-index: 1; */
+    
+    /* Add width and height properties to display the image */
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
 }
 .game-over {
     background-color: forestgreen;
