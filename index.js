@@ -4,7 +4,7 @@ var win =false;
 var count=0;
 var checkClicked = [false,false,false,false,false,false,false,false,false];
 var matrix = [[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]];
-$("body").click (function (event){
+$("body").bind ("click touchstart",function (event){
     
         if(event.handled === false) return ;
         event.stopPropagation();
@@ -25,7 +25,7 @@ function begin(){
     
 };
 
-$(".btn").click(function(event){
+$(".btn").bind("click touchstart",function(event){
     if(event.handled === false) return ;
     event.stopPropagation();
     event.preventDefault();
@@ -176,10 +176,14 @@ function remClass(){
             checkClicked[i-1]=false;
             if($("#btn"+i).hasClass("zero"))
             {
-                $("#btn"+i).removeClass("zero");   
+                $("#btn"+i).removeClass("zero");
+                $("#btn"+i).removeClass("bg-zero");   
             }
             else
-            $("#btn"+i).removeClass("cross");
+            {
+                $("#btn"+i).removeClass("cross");
+                $("#btn"+i).removeClass("bg-cross");
+            }
         }
     }
     
