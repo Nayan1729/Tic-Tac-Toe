@@ -35,7 +35,7 @@ body{
 }
 .bg-zero {
     /* background: linear-gradient(180deg, orange 60%, green); */
-    background-color: orangered;
+    background-color: aqua;
     background-image: url("./images/zero.png");
     background-size: cover;
     background-position: center;
