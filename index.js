@@ -15,14 +15,11 @@ $("body").bind ("click touchstart",function (event){
         matrix = [[-1,-1,-1],[-1,-1,-1],[-1,-1,-1]];
         remClass();
         begin();
-
     }
-  
 });
 function begin(){
         started=true;
         $("h1").text("Player1's Turn");
-    
 };
 
 $(".btn").bind("click touchstart",function(event){
